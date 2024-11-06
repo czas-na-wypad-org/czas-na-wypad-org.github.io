@@ -24,7 +24,7 @@ const config = {
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'czas-na-wypad-org', // Usually your GitHub org/user name.
-    projectName: 'czas-na-wypad.github.io', // Usually your repo name.
+    projectName: 'czas-na-wypad-org.github.io', // Usually your repo name.
     deploymentBranch: "gh-pages",
 
     onBrokenLinks: 'throw',
