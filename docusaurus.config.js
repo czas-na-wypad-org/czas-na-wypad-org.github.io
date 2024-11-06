@@ -27,7 +27,6 @@ const config = {
     projectName: 'czas-na-wypad.github.io', // Usually your repo name.
     deploymentBranch: "gh-pages",
 
-
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
 
