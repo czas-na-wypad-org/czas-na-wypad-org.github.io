@@ -1,47 +1,60 @@
 ---
 sidebar_position: 1
 ---
-
 # O projekcie
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Projekt **czas-na-wypad** jest projektem stworzonym w ramach zajęć z przedmiotu Aplikacje Wielowarstwowe. Projektem jest aplikacja webowa umożliwiająca użytkownikom wyszukiwanie i interakcję z lokalnymi atrakcjami. Aplikacja jest zbudowana w architekturze wielowarstwowej i ma na celu ułatwienie planowania czasu wolnego poprzez dostarczenie intuicyjnych funkcji wyszukiwania, rezerwacji, ulubionych oraz oceny atrakcji.
 
-## Getting Started
+## Funkcje aplikacji
 
-Get started by **creating a new site**.
+### Podstawowe funkcje
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+1. **Rejestracja i logowanie**  
+   Użytkownicy mogą zakładać konta, logować się do aplikacji, a także zarządzać swoimi danymi. Bezpieczeństwo haseł zapewnia algorytm hashujący BCrypt, natomiast sesje użytkowników obsługiwane są przez tokeny JWT.
 
-### What you'll need
+2. **Wyszukiwanie atrakcji**  
+   Aplikacja umożliwia wyszukiwanie atrakcji w oparciu o lokalizację użytkownika oraz zastosowane filtry, takie jak typ atrakcji, godziny otwarcia i oceny użytkowników. Wyniki mogą być sortowane według ocen, popularności oraz odległości.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+3. **Filtrowanie i sortowanie wyników**  
+   Użytkownicy mogą dostosowywać wyniki wyszukiwania do swoich preferencji, zawężając je według wybranych kryteriów, takich jak typ atrakcji, oceny, godziny otwarcia lub cena.
 
-## Generate a new site
+4. **Ulubione**  
+   Funkcja umożliwia dodanie atrakcji do listy ulubionych, co pozwala użytkownikom na szybki dostęp do najczęściej odwiedzanych miejsc, dostępnych z poziomu ich profilu.
 
-Generate a new Docusaurus site using the **classic template**.
+### Dodatkowe funkcje
 
-The classic template will automatically be added to your project after you run the command:
+1. **Rezerwacja biletów**  
+   Użytkownicy mogą rezerwować bilety na wybrane atrakcje. Informacje o rezerwacjach są przechowywane w profilu użytkownika, a proces rezerwacji jest zintegrowany z zewnętrznymi systemami rezerwacyjnymi.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+2. **Mapa z pinezkami**  
+   Aplikacja oferuje interaktywną mapę, na której wyświetlane są lokalizacje atrakcji. Kliknięcie na pinezkę umożliwia użytkownikowi przegląd szczegółowych informacji o danej atrakcji.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+3. **Opinie i oceny**  
+   Użytkownicy mogą oceniać i dodawać opinie o atrakcjach. Opinie są wyświetlane przy każdej atrakcji, co pomaga innym użytkownikom w wyborze miejsca do odwiedzenia.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## Architektura wielowarstwowa
 
-## Start your site
+Aplikacja `czas-na-wypad` została zaprojektowana w architekturze wielowarstwowej, co ułatwia zarządzanie kodem, testowanie i skalowanie aplikacji.
 
-Run the development server:
+1. **Warstwa prezentacji (frontend)**  
+   Frontend aplikacji jest zbudowany z wykorzystaniem ReactJS. Użytkownicy mają dostęp do stron rejestracji, logowania, wyszukiwania atrakcji, szczegółów atrakcji, ulubionych i profilu. Komunikacja z backendem odbywa się za pomocą REST API.
 
-```bash
-cd my-website
-npm run start
-```
+2. **Warstwa logiki biznesowej (backend)**  
+   Backend aplikacji został zrealizowany w języku Java przy użyciu Spring Boot. Odpowiada za zarządzanie użytkownikami, sesjami (JWT), wyszukiwanie atrakcji i rezerwacje. Dane dotyczące opinii i ocen również są zarządzane przez tę warstwę.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+3. **Warstwa danych (baza danych)**  
+   Dane aplikacji są przechowywane w relacyjnej bazie danych (np. PostgreSQL lub MySQL). Zawiera tabele przechowujące informacje o użytkownikach, atrakcjach, rezerwacjach, opiniach i ulubionych miejscach, co umożliwia skuteczne zarządzanie relacjami między tymi danymi.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+## Zagadnienia techniczne
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+1. **Hashowanie haseł**  
+   Bezpieczeństwo haseł jest zapewniane przez algorytm BCrypt, który zapobiega przechowywaniu haseł w postaci tekstowej.
+
+2. **Autoryzacja i sesje**  
+   Sesje użytkowników są zarządzane przy użyciu JWT (JSON Web Tokens), co umożliwia bezpieczne zarządzanie dostępem do chronionych zasobów.
+
+3. **Komunikacja frontend-backend**  
+   Komunikacja między frontendem a backendem odbywa się za pośrednictwem REST API, co umożliwia wymianę danych i zapewnia wydajność aplikacji.
+
+4. **Zarządzanie bazą danych**  
+   Relacyjne tabele przechowują dane o użytkownikach, atrakcjach, rezerwacjach i opiniach. Struktura bazy danych została zoptymalizowana pod kątem wydajności zapytań i łatwości zarządzania danymi.
