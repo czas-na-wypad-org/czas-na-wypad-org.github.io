@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # O projekcie
 
-Projekt **czas-na-wypad** jest projektem stworzonym w ramach zajęć z przedmiotu Aplikacje Wielowarstwowe. Projektem jest aplikacja webowa umożliwiająca użytkownikom wyszukiwanie i interakcję z lokalnymi atrakcjami. Aplikacja jest zbudowana w architekturze wielowarstwowej i ma na celu ułatwienie planowania czasu wolnego poprzez dostarczenie intuicyjnych funkcji wyszukiwania, rezerwacji, ulubionych oraz oceny atrakcji.
+Projekt **czas-na-wypad** jest projektem stworzonym w ramach zajęć z przedmiotu Aplikacje Wielowarstwowe na uczelni SGGW. Projektem jest aplikacja webowa umożliwiająca użytkownikom wyszukiwanie i interakcję z lokalnymi atrakcjami. Aplikacja jest zbudowana w architekturze wielowarstwowej i ma na celu ułatwienie planowania czasu wolnego poprzez dostarczenie intuicyjnych funkcji wyszukiwania, rezerwacji, ulubionych oraz oceny atrakcji.
 
 ## Funkcje aplikacji
 
