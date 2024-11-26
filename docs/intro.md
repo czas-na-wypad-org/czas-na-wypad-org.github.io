@@ -21,6 +21,9 @@ Projekt **czas-na-wypad** jest projektem stworzonym w ramach zajęć z przedmiot
 4. **Ulubione**  
    Funkcja umożliwia dodanie atrakcji do listy ulubionych, co pozwala użytkownikom na szybki dostęp do najczęściej odwiedzanych miejsc, dostępnych z poziomu ich profilu.
 
+5. **Opinie i oceny**  
+   Użytkownicy mogą oceniać i dodawać opinie o atrakcjach. Opinie są wyświetlane przy każdej atrakcji, co pomaga innym użytkownikom w wyborze miejsca do odwiedzenia.
+
 ### Dodatkowe funkcje
 
 1. **Rezerwacja biletów**  
@@ -28,9 +31,6 @@ Projekt **czas-na-wypad** jest projektem stworzonym w ramach zajęć z przedmiot
 
 2. **Mapa z pinezkami**  
    Aplikacja oferuje interaktywną mapę, na której wyświetlane są lokalizacje atrakcji. Kliknięcie na pinezkę umożliwia użytkownikowi przegląd szczegółowych informacji o danej atrakcji.
-
-3. **Opinie i oceny**  
-   Użytkownicy mogą oceniać i dodawać opinie o atrakcjach. Opinie są wyświetlane przy każdej atrakcji, co pomaga innym użytkownikom w wyborze miejsca do odwiedzenia.
 
 ## Architektura wielowarstwowa
 
