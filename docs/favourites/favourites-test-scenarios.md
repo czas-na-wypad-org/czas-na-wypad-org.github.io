@@ -1,0 +1,1 @@
+# Scenariusze Testowe dla Ulubionych Użytkownika
