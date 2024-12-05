@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Filtrowanie i Sortowanie Wyników
+# Dokumentacja Filtrowanie i Sortowanie Wyników
 
 Filtrowanie i sortowanie wyników w aplikacji **czas-na-wypad** umożliwia użytkownikom personalizację wyników wyszukiwania zgodnie z ich preferencjami. Dzięki temu użytkownicy mogą łatwo znaleźć najciekawsze atrakcje odpowiadające ich wymaganiom.
 
