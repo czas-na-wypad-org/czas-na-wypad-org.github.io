@@ -58,6 +58,15 @@ const sidebars = {
         },
         {
             type: 'category',
+            label: 'Atrakcje',
+            collapsed: true,
+            items: [
+                'attractions/attractions', // Dokument główny
+                'attractions/attractions-test-scenarios', // Scenariusze testowe
+            ],
+        },
+        {
+            type: 'category',
             label: 'Filtrowanie i sortowanie wyników',
             collapsed: true,
             items: [
