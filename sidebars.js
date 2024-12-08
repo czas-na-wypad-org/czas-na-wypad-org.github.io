@@ -24,6 +24,14 @@ const sidebars = {
         'intro',
         {
             type: 'category',
+            label: 'Etapy projektu',
+            collapsed: true,
+            items: [
+                'project-steps/project-steps',
+            ],
+        },
+        {
+            type: 'category',
             label: 'Model danych',
             collapsed: true,
             items: [
