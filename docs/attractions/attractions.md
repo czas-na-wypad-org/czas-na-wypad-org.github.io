@@ -1,6 +1,6 @@
 
 
-# Dokumentacja wyszukiwania atakcji
+# Dokumentacja wyszukiwania atrakcji
 
 
 ## Wstęp
