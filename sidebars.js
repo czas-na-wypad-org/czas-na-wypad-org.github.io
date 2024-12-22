@@ -32,6 +32,22 @@ const sidebars = {
         },
         {
             type: 'category',
+            label: 'Podsumowanie projektu i problemy',
+            collapsed: true,
+            items: [
+                'summary/summary',
+            ],
+        },
+        {
+            type: 'category',
+            label: 'Wygląd wystawionej aplikacji',
+            collapsed: true,
+            items: [
+                'appearance/appearance',
+            ],
+        },
+        {
+            type: 'category',
             label: 'Model danych',
             collapsed: true,
             items: [
